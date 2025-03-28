@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about Tech Money Hub and its mission to provide valuable content."
+    />
+    <meta name="keywords" content="About Us, Blog, Mission, Content" />
+    <meta name="author" content="Tech Money Hub" />
+    <title>About - Tech Money Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Tech Money Hub</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+            <li>
+              <a href="categories.html" class="hover:text-gray-300"
+                >Categories</a
+              >
+            </li>
+            <li><a href="blog.html" class="hover:text-gray-300">Blog</a></li>
+            <li>
+              <a href="contact.html" class="hover:text-gray-300">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Content -->
+    <section class="py-12">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">About Us</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+          Welcome to <strong>Your Blog Name</strong>, your go-to source for the
+          latest insights on Tech, Business, Investing, Crypto, and Passive
+          Income. Our mission is to help you stay informed, make smart financial
+          decisions, and grow your wealth.
+        </p>
+      </div>
+    </section>
+    <!-- Social Media Share & Follow Section -->
+    <div class="bg-gray-100 p-6 text-center mt-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Share This Blog</h2>
+
+      <!-- Share Buttons -->
+      <div class="flex justify-center space-x-4">
+        <!-- WhatsApp -->
+        <a
+          href="https://api.whatsapp.com/send?text=Check out this blog: https://yourwebsite.com"
+          class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+        >
+          Share on WhatsApp
+        </a>
+
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com"
+          target="_blank"
+          class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+        >
+          Share on Facebook
+        </a>
+
+        <!-- Twitter -->
+        <a
+          href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check out this blog!"
+          target="_blank"
+          class="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500"
+        >
+          Share on Twitter
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourwebsite.com"
+          target="_blank"
+          class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800"
+        >
+          Share on LinkedIn
+        </a>
+
+        <!-- Telegram -->
+        <a
+          href="https://t.me/share/url?url=https://yourwebsite.com&text=Check out this blog!"
+          target="_blank"
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        >
+          Share on Telegram
+        </a>
+      </div>
+
+      <!-- Copy Link Button -->
+      <div class="mt-4">
+        <button
+          onclick="copyLink()"
+          class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800"
+        >
+          Copy Link
+        </button>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-800 mt-6">Follow Us</h2>
+
+      <!-- Social Media Profile Links -->
+      <div class="flex justify-center space-x-4 mt-3">
+        <a
+          href="https://www.instagram.com/yourprofile"
+          target="_blank"
+          class="text-pink-600 text-lg hover:underline"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://www.twitter.com/yourprofile"
+          target="_blank"
+          class="text-blue-400 text-lg hover:underline"
+        >
+          Twitter
+        </a>
+        <a
+          href="https://www.facebook.com/yourprofile"
+          target="_blank"
+          class="text-blue-600 text-lg hover:underline"
+        >
+          Facebook
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourprofile"
+          target="_blank"
+          class="text-blue-700 text-lg hover:underline"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <!-- JavaScript for Copy Link -->
+    <script>
+      function copyLink() {
+        const dummy = document.createElement("textarea");
+        document.body.appendChild(dummy);
+        dummy.value = window.location.href;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+        alert("Link copied to clipboard!");
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+      <p>&copy; 2025 Tech Money Hub. All Rights Reserved.</p>
+      <a href="privacy.html" class="text-blue-300">Privacy Policy</a>
+    </footer>
+  </body>
+</html>
