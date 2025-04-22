@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tricks & Tips - Tech Money Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Tech Money Hub</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                <li><a href="categories.html" class="hover:text-gray-300">Categories</a></li>
+                <li><a href="programming.html" class="hover:text-gray-300">Programming</a></li>
+                <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-blue-500 text-white py-16 text-center">
+    <h2 class="text-4xl font-bold">CSS Tricks & Tips</h2>
+    <p class="mt-4 text-lg">Enhance your website styling with these advanced CSS techniques.</p>
+</section>
+
+<!-- Article Content -->
+<section class="py-12 px-4">
+    <div class="container mx-auto max-w-3xl bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-6">Top 5 CSS Tricks to Improve Your Website</h2>
+        
+        <h3 class="text-2xl font-bold mt-4">1. CSS Variables</h3>
+        <p class="text-gray-700 mt-2">
+            CSS variables allow you to define reusable values across your stylesheets.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+:root {
+    --primary-color: #3498db;
+}
+body {
+    background-color: var(--primary-color);
+}
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">2. Flexbox for Easy Layouts</h3>
+        <p class="text-gray-700 mt-2">
+            Flexbox helps create responsive layouts with minimal CSS.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">3. CSS Grid for Advanced Layouts</h3>
+        <p class="text-gray-700 mt-2">
+            CSS Grid is a powerful way to design complex layouts.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">4. Hover Effects for Better UX</h3>
+        <p class="text-gray-700 mt-2">
+            Adding hover effects makes your site more interactive.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+button:hover {
+    background-color: #2ecc71;
+    color: white;
+}
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">5. Dark Mode with CSS</h3>
+        <p class="text-gray-700 mt-2">
+            Implement dark mode easily using CSS.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+}
+        </pre>
+
+        <p class="mt-6 text-gray-600">These simple tricks can significantly improve your website’s styling and user experience!</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Tech Money Hub. All Rights Reserved.</p>
+    <a href="privacy.html" class="text-blue-300">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
