@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering JavaScript - Tech Money Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+<!-- Header -->
+<header class="bg-yellow-500 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Tech Money Hub</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                <li><a href="categories.html" class="hover:text-gray-300">Categories</a></li>
+                <li><a href="programming.html" class="hover:text-gray-300">Programming</a></li>
+                <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-yellow-400 text-white py-16 text-center">
+    <h2 class="text-4xl font-bold">Mastering JavaScript</h2>
+    <p class="mt-4 text-lg">Learn the advanced concepts of JavaScript and take your skills to the next level.</p>
+</section>
+
+<!-- Article Content -->
+<section class="py-12 px-4">
+    <div class="container mx-auto max-w-3xl bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-6">Deep Dive into JavaScript</h2>
+
+        <p class="text-gray-700 mt-2">
+            JavaScript is a versatile language used for web development, backend programming, and even mobile applications.
+        </p>
+
+        <h3 class="text-2xl font-bold mt-4">Why Master JavaScript?</h3>
+        <ul class="list-disc ml-6 mt-2 text-gray-700">
+            <li>Build interactive websites and web applications.</li>
+            <li>Work with modern JavaScript frameworks like React, Vue, and Angular.</li>
+            <li>Create backend applications with Node.js.</li>
+            <li>JavaScript is in high demand for web development jobs.</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-4">JavaScript Variables</h3>
+        <p class="text-gray-700 mt-2">
+            JavaScript has three main ways to declare variables: <code>var</code>, <code>let</code>, and <code>const</code>.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+var name = "John";  // Old way (avoid using)
+let age = 25;       // Block-scoped variable
+const PI = 3.14;    // Constant value (cannot be changed)
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">Functions in JavaScript</h3>
+        <p class="text-gray-700 mt-2">
+            Functions allow you to reuse blocks of code efficiently.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+// Regular function
+function greet(name) {
+    return "Hello, " + name;
+}
+
+// Arrow function
+const greetArrow = (name) => "Hello, " + name;
+
+console.log(greet("Alice"));
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">Asynchronous JavaScript (Promises & Async/Await)</h3>
+        <p class="text-gray-700 mt-2">
+            JavaScript is single-threaded, but you can handle asynchronous operations using Promises and <code>async/await</code>.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+// Using Promises
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
+// Using Async/Await
+async function getData() {
+    try {
+        let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
+getData();
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">JavaScript ES6+ Features</h3>
+        <p class="text-gray-700 mt-2">
+            ECMAScript 6 (ES6) introduced new features that make JavaScript more powerful and readable.
+        </p>
+        <ul class="list-disc ml-6 mt-2 text-gray-700">
+            <li><strong>Arrow Functions</strong> → Shorter syntax for functions.</li>
+            <li><strong>Template Literals</strong> → Use backticks (`) for string interpolation.</li>
+            <li><strong>Destructuring</strong> → Easily extract values from objects and arrays.</li>
+            <li><strong>Spread & Rest Operators</strong> → Useful for merging and handling arrays.</li>
+            <li><strong>Modules</strong> → Use <code>import</code> and <code>export</code> to organize code.</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold mt-4">JavaScript DOM Manipulation</h3>
+        <p class="text-gray-700 mt-2">
+            You can use JavaScript to manipulate the Document Object Model (DOM) and make web pages dynamic.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+// Changing text content
+document.getElementById("demo").textContent = "Hello, JavaScript!";
+        </pre>
+
+        <h3 class="text-2xl font-bold mt-4">Event Listeners</h3>
+        <p class="text-gray-700 mt-2">
+            Use event listeners to handle user interactions.
+        </p>
+        <pre class="bg-gray-200 p-4 rounded mt-2">
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Button Clicked!");
+});
+        </pre>
+
+        <p class="mt-6 text-gray-600">
+            This article covers essential JavaScript concepts. Keep practicing and exploring to become a JavaScript expert!
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Tech Money Hub. All Rights Reserved.</p>
+    <a href="privacy.html" class="text-blue-300">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
